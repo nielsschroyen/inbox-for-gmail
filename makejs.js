@@ -15,7 +15,7 @@ var header = "" +
 "// @copyright   2018+, " + manifest["author"] + " (" + manifest["homepage_url"] + ")\n" +
 "// @license     " + manifest["licenses"][0].type + "; " + manifest["licenses"][0].url + "\n" +
 "// @version     " + manifest["version"] + "\n" +
-"// @icon        " + manifest["homepage_url"] + "/master/icon.png\n" +
+"// @icon        " + manifest["homepage_url"] + "/raw/master/icon.png\n" +
 "// @homepageURL " + manifest["homepage_url"] + "\n" +
 "// @supportURL  " + manifest["homepage_url"] + "\n" +
 "// @include     https://mail.google.com/mail/* \n" +
