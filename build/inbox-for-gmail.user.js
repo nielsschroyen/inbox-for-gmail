@@ -7,8 +7,8 @@
 // @author      Niels Schroyen
 // @copyright   2018+, Niels Schroyen (https://github.com/nielsschroyen/inbox-for-gmail)
 // @license     MIT; https://raw.githubusercontent.com/nielsschroyen/inbox-for-gmail/master/LICENSE
-// @version     1.0.1
-// @icon        https://github.com/nielsschroyen/inbox-for-gmail/master/icon.png
+// @version     1.0.2
+// @icon        https://github.com/nielsschroyen/inbox-for-gmail/raw/master/icon.png
 // @homepageURL https://github.com/nielsschroyen/inbox-for-gmail
 // @supportURL  https://github.com/nielsschroyen/inbox-for-gmail
 // @include     https://mail.google.com/mail/* 
