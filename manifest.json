@@ -3,7 +3,7 @@
 
   "name": "Inbox for Gmail",
   "description": "Make Gmail look like Google Inbox.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage_url":"https://github.com/nielsschroyen/inbox-for-gmail",
   "author": "Niels Schroyen",
   "browser_action": {

@@ -17,7 +17,7 @@ var header = "" +
 "// @version     " + manifest["version"] + "\n" +
 "// @icon        " + manifest["homepage_url"] + "/raw/master/icon.png\n" +
 "// @homepageURL " + manifest["homepage_url"] + "\n" +
-"// @supportURL  " + manifest["homepage_url"] + "\n" +
+"// @supportURL  " + manifest["homepage_url"] + "/issues\n" +
 "// @include     https://mail.google.com/mail/* \n" +
 "// @grant       none\n" +
 "// ==/UserScript==\n" +

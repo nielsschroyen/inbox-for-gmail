@@ -8,39 +8,33 @@
   (document.head || document.documentElement).appendChild(style);
 
   //Show sun if no messages are present otherwise hide it
-  var doc = document;
-  window.setInterval(showHideSunshine, 500);
+  window.setInterval(()=>showHideSunshine(), 500);
 
   function showHideSunshine(){
-    if(emptyEmailBoxShown() && !sunshineShown() && inboxLoaded()){
+    if(!inboxLoaded())
+        return;
+
+    if(emptyEmailBoxShown() && !sunshineShown()){
         showSunshine();
     }
     
-    if(!emptyEmailBoxShown() && sunshineShown() && inboxLoaded()){
+    if(!emptyEmailBoxShown() && sunshineShown()){
         hideSunshine()
     }
   }
 
-  function emptyEmailBoxShown(){ 
-    return doc.querySelectorAll('.TD').length > 0
-  }
-
-  function sunshineShown(){ 
-    return doc.querySelectorAll('.sunshine').length > 0;
-  }
-
-  function inboxLoaded(){
-    doc.querySelectorAll('.Cp').length > 0
-  }
+  var emptyEmailBoxShown = () => document.querySelectorAll('.TD').length > 0;
+  var sunshineShown = () => document.querySelectorAll('.sunshine').length > 0;
+  var inboxLoaded = () => document.querySelectorAll('.Cp').length > 0;
 
   function showSunshine(){
-    var div = doc.createElement("div");
+    var div = document.createElement("div");
     div.setAttribute('class', 'sunshine');
-    doc.querySelector(".AO div div").appendChild(div);
+    document.querySelector(".AO div div").appendChild(div);
   }
 
   function hideSunshine(){
-    var elements = doc.querySelectorAll('.sunshine');
+    var elements = document.querySelectorAll('.sunshine');
     while(elements.length > 0){
         elements[0].parentNode.removeChild(elements[0]);
     }
